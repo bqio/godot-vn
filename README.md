@@ -1,2 +1,1 @@
-# godot-vn
-Godot Visual Novel Engine
+# Godot Visual Novel Engine
