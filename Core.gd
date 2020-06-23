@@ -70,7 +70,9 @@ func render(string_middlewares: Array):
 				_event_handler.emit("sprite", middleware)
 			"text":
 				middleware.pop_front()
-				_event_handler.emit("text", middleware)
+				var name = middleware.pop_front()
+				var string = PoolStringArray(middleware).join(" ")
+				_event_handler.emit("text", [name, string])
 				yield(self, "mouse_click")
 			"end":
 				_event_handler.emit("end")
