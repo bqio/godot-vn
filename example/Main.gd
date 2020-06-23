@@ -19,13 +19,12 @@ func _ready():
 	vn.define_character_name_color("Lena", "#0000FF")
 	vn.define_normal_font("res/fonts/BalsamiqSans-Regular.ttf", 20)
 	
-	# script
+#	var vne = vn.load_vne_file("res/scripts/script.vne")
+#	vn.render(vne)
+
 	vn.render([
-		vn.bg("Main"),
-		vn.sprite("Alisa", 0.1),
-		vn.text("Alisa", "Привет, Lena!"),
-		vn.bg("Default"),
-		vn.sprite("Lena", 0.5, true),
-		vn.text("Lena", "Привет, Alisa!"),
-		vn.end()
+		"bg Main",
+		"sprite Alisa 0.5",
+		"text Alisa Hello!",
+		"end"
 	])
