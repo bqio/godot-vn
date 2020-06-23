@@ -1,0 +1,4 @@
+bg Main
+sprite Alisa 0.1 false
+text Alisa Hello!
+end
